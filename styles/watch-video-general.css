@@ -1,0 +1,379 @@
+p {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(15, 15, 15);
+    margin: 80px 24px 30px 24px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html {
+  /*overflow-y: scroll;*/
+  scrollbar-color: rgb(171, 171, 171) rgb(15, 15, 15);
+}
+
+hr {
+  border: 1px solid rgb(62, 62, 62);
+}
+
+.watch-video-flex {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.video-column {
+  flex: 50%;
+}
+
+.recommendation-column {
+  flex: 30%;
+}
+
+.video-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video-title {
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.video-info-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-info__channel {
+  flex: 50%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.channel-picture {
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.channel-name {
+  font-size: 16px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  max-height: 1.2em;
+  overflow: hidden; 
+  cursor: pointer;
+}
+
+.channel-subscribers {
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+}
+
+.subscribe-button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.video-info__options {
+  flex: 50%;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  margin-top: 12px;
+}
+
+.like-button, .dislike-button, .share-button, .download-button, .three-dots-button {
+  height: 36px;
+  background-color:  rgb(40, 40, 40);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+}
+
+.like-button {
+  border-radius: 0;
+  border-right-width: 0;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding-right: 15px;
+  border-right: 1px solid rgb(62, 62, 62);
+}
+
+.dislike-button {
+  border-radius: 0;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  margin-right: 10px;
+}
+
+.share-button {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
+.download-button {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.three-dots-button {
+   width: 36px;
+}
+
+.like-button:hover, .dislike-button:hover, .share-button:hover, .download-button:hover, .three-dots-button:hover {
+  background-color:  rgb(62, 62, 62);
+  text-align: top;
+
+}
+
+.like-icon, .dislike-icon, .share-icon, .download-icon, .three-dots-icon {
+  filter: invert();
+  cursor: pointer;
+}
+
+.like-icon {
+  height: 32px;
+  margin-top: -8px;
+}
+
+.dislike-icon {
+  height: 32px;
+  margin-top: -8px;
+  transform: rotate(180deg);
+}
+
+.share-icon {
+  height: 22px;
+  margin-right: 8px;
+  margin-top: -5px;
+}
+
+.download-icon {
+  height: 18px;
+  margin-right: 8px;
+}
+
+.three-dots-icon {
+  height: 15px;
+}
+
+.video-description {
+  background-color:  rgb(40, 40, 40);
+  margin-top: 12px;
+  border-radius: 12px;
+  padding: 15px 12px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.video-description p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.video-description a {
+  color: #3ea6ff;
+}
+
+.see-full-description {
+  cursor: pointer;
+}
+
+.comment-section {
+  text-align: left;
+  border-top: 1px solid rgb(62, 62, 62);
+  padding-top: 15px;
+}
+
+.comment-count {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.sort-by-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sort-by {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.list-icon {
+  height: 25px;
+  filter: invert();
+  margin-right: 8px;
+}
+
+.add-comment {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.add-comment__my-channel {
+  height: 43px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.add-comment__bar {
+  flex: auto;
+}
+
+.add-a-comment {
+  width: 100%;
+  display: block;
+  background-color: rgb(15, 15, 15);
+  font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(170, 170, 170);
+  border: none;
+  border-bottom: 1px solid rgb(62, 62, 62);
+  padding-bottom: 7px;
+}
+
+.add-a-comment::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.down-arrow-icon {
+  height: 13px;
+  filter: invert(45%) sepia(100%) saturate(812%) hue-rotate(188deg) brightness(106%) contrast(100%);
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.watch-video-categories {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+/* Hide download button*/
+@media (max-width: 674.9px) {
+  .video-info__options {
+    justify-content: start;
+  }
+}
+@media (min-width: 675px) and (max-width: 930px) {
+  .download-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1020.9px) and (max-width: 1350px) {
+  .download-button {
+    display: none;
+  }
+}
+
+
+/*  Both video and feed change size
+    (1 column)   */
+@media (max-width: 674.9px) { 
+  .video-column, .recommendation-column {
+    flex: 100%;
+    max-width: none;
+  }
+  .video-info__channel, .video-info__options {
+    flex: 100%;
+  }
+  .comment-section {
+    display: none;
+  }
+
+}
+
+/*  Both video and feed stay the same
+    (1 column)   */
+@media (min-width: 675px) and (max-width: 1020.9px) {
+  .video-column {
+    flex: 100%;
+    max-width: 910px;
+  }
+  .recommendation-column {
+    flex: 100%;
+    max-width: none;
+  }
+  .comment-section {
+    display: none;
+  }
+}
+
+/*  Video stays the same, feed changes size
+    (2 columns)   */
+@media (min-width: 1021px) and (max-width: 1135.9px) { 
+  .video-column {
+    max-width: 664px;
+    min-width: 664px;
+  }
+  .recommendation-column {
+    max-width: none;
+  }
+}
+
+/*  Video changes size, feed stays the same
+    (2 columns)   */
+@media (min-width: 1136px) and (max-width: 1400.9px) {
+  .video-column { 
+    max-width: none;
+  }
+  .recommendation-column {
+    max-width: 400px;
+  }
+}
+
+/*  Both video and feed stay the same
+    (2 columns)   */
+@media (min-width: 1401px) {
+  .video-column {
+    max-width: 930px;
+  }
+  .recommendation-column {
+    max-width: 400px;
+  }
+}

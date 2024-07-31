@@ -208,7 +208,7 @@
   left: 0;
   right: 0;
   display: flex;
-  padding-left: 84px;
+  padding-left: 96px;
   padding-bottom: 2px;
   flex-direction: row;
   justify-items: right;
@@ -221,7 +221,7 @@
   font-size: 14px;
   font-weight: 500;
   padding: 8px 12px 7px 12px;
-  margin-left: 12px;
+  margin-right: 12px;
   margin-bottom: 10px;
   border-radius: 8px;
   cursor: pointer;

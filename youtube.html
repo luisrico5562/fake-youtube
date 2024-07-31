@@ -3,13 +3,15 @@
 
 <head>
   <title>YouTube CLONE</title>
+  <link rel="icon" href="icons/youtube-inverted.svg" type="image/icon type">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/index-general.css">
   <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/index-video.css">
   <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 
@@ -47,43 +49,43 @@
   </header>
 
   <nav class="header-categories">
-    <div class="category--selected category--all" onclick="changeCategory('category--all')">
+    <div class="category--selected category--all" onclick="changeCategory('all')">
       All
     </div>
-    <div class="category category--gaming" onclick="changeCategory('category--gaming')">
+    <div class="category category--gaming" onclick="changeCategory('gaming')">
       Gaming
     </div>
-    <div class="category category--music" onclick="changeCategory('category--music')">
+    <div class="category category--music" onclick="changeCategory('music')">
       Music
     </div>
-    <div class="category category--computer-programming" onclick="changeCategory('category--computer-programming')">
+    <div class="category category--computer-programming" onclick="changeCategory('computer-programming')">
       Computer programming
     </div>
-    <div class="category category--cloud-computing" onclick="changeCategory('category--cloud-computing')">
-      Cloud computing
+    <div class="category category--lessons" onclick="changeCategory('lessons')">
+      Lessons
     </div>
-    <div class="category category--computer-hardware" onclick="changeCategory('category--computer-hardware')">
+    <div class="category category--computer-hardware" onclick="changeCategory('computer-hardware')">
       Computer Hardware
     </div>
-    <div class="category category--cpus" onclick="changeCategory('category--cpus')">
-      CPUs
+    <div class="category category--universe" onclick="changeCategory('universe')">
+      Universe
     </div>
-    <div class="category category--inventions" onclick="changeCategory('category--inventions')">
+    <div class="category category--inventions" onclick="changeCategory('inventions')">
       Inventions
     </div>
-    <div class="category category--ios" onclick="changeCategory('category--ios')">
-      iOS
+    <div class="category category--history" onclick="changeCategory('history')">
+      History
     </div>
-    <div class="category category--puzzle-games" onclick="changeCategory('category--puzzle-games')">
-      Puzzle games
+    <div class="category category--media-theories" onclick="changeCategory('media-theories')">
+      Media theories
     </div>
-    <div class="category category--live" onclick="changeCategory('category--live')">
+    <div class="category category--live" onclick="changeCategory('live')">
       Live
     </div>
-    <div class="category category--recently-uploaded" onclick="changeCategory('category--recently-uploaded')">
+    <div class="category category--recently-uploaded" onclick="changeCategory('recently-uploaded')">
       Recently uploaded
     </div>
-    <div class="category category--new-to-you" onclick="changeCategory('category--new-to-you')">
+    <div class="category category--new-to-you" onclick="changeCategory('new-to-you')">
       New to you
     </div>
   </nav>
@@ -94,12 +96,12 @@
       <p>Home</p>
     </div>
     <div class="sidebar-feed-links">
-      <img src="icons/subscriptions.svg">
-      <p>subscriptions</p>
+      <img src="icons/youtube-shorts.svg">
+      <p>Shorts</p>
     </div>
     <div class="sidebar-feed-links">
-      <img src="icons/youtube-music.svg">
-      <p>Music</p>
+      <img src="icons/subscriptions.svg">
+      <p>Subscriptions</p>
     </div>
     <div class="sidebar-feed-links">
       <img src="icons/library.svg">
@@ -108,12 +110,13 @@
   </nav>
 
   <main>
-    <section class="video-grid">
+    <section class="video-grid js-video-grid">
       
     </section>
   </main>
 
-  <script src="scripts/header.js"></script>
+  <script src="data/videos.js"></script>
+  <script src="scripts/youtube.js"></script>
 
 </body>
 
