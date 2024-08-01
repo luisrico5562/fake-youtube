@@ -16,7 +16,7 @@ function renderThumbnails(thumbnailsCategory = 'all') {
                     </div>
                     <div class="video-info-grid">
                     <div class="channel-picture">
-                        <a href="${channelLink}">
+                        <a href="">
                         <img class="profile-picture" src="channel-pictures/channel-${i + 1}.jpeg">
                         </a>
                     </div>
@@ -24,7 +24,7 @@ function renderThumbnails(thumbnailsCategory = 'all') {
                         <a href="watch-video.html?v=${i}">
                         <p class="video-title">${title}</p>
                         </a>
-                        <a href="${channelLink}">
+                        <a href="">
                         <p class="video-author">${author}</p>
                         </a>
                         <p class="video-stats">${views}</p>
@@ -44,7 +44,7 @@ function renderThumbnails(thumbnailsCategory = 'all') {
                     </div>
                     <div class="video-info-grid">
                     <div class="channel-picture">
-                        <a href="${channelLink}">
+                        <a href="">
                         <img class="profile-picture" src="channel-pictures/channel-${i + 1}.jpeg">
                         </a>
                     </div>
@@ -52,7 +52,7 @@ function renderThumbnails(thumbnailsCategory = 'all') {
                         <a href="watch-video.html?v=${i}">
                         <p class="video-title">${title}</p>
                         </a>
-                        <a href="${channelLink}">
+                        <a href="">
                         <p class="video-author">${author}</p>
                         </a>
                         <p class="video-stats">${views} <strong>&#183;</strong> ${timeReleased}</p>
